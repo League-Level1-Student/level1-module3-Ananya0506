@@ -22,6 +22,7 @@ public class Canvas {
 
     public Canvas() {
         circles = new ArrayList<>();
+        
 
         frame = new JFrame();
         frame.setTitle("Static Keyword Demo");

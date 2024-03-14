@@ -10,7 +10,32 @@ import java.util.Collections;
 public class NetflixQueue {
 
 	ArrayList<Movie> movies = new ArrayList<Movie>();
+//sign out of github next time
 
+
+
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+	//sign out of github next time
+
+	
 	/**
 	 * Sorts the Netflix Queue then returns the best movie
 	 * 

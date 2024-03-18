@@ -10,30 +10,7 @@ import java.util.Collections;
 public class NetflixQueue {
 
 	ArrayList<Movie> movies = new ArrayList<Movie>();
-//sign out of github next time
 
-
-
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
-	//sign out of github next time
 
 	
 	/**

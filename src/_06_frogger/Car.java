@@ -19,7 +19,7 @@ public class Car extends PApplet{
 //	    rect(this.x , this.y, this.size, 50);
 	    
 	}
-	
+			 
 public int getX() {
 	System.out.println(x);
 	return this.x;

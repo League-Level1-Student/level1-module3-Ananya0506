@@ -5,8 +5,8 @@ import processing.core.PApplet;
 public class Frogger extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 800;
-    int Froggerx;
-    int Froggery=100;
+    int Froggerx=400;
+    int Froggery=30;
     int x;
     int y;
     Car c1;
@@ -16,7 +16,16 @@ public class Frogger extends PApplet {
     public void settings() {
         size(WIDTH, HEIGHT);
     }
-
+    boolean intersects(Car car) {
+		 if ((Froggery > car.getY() && Froggery < car.getY()+50) &&
+		                (Froggerx > car.getX() && Froggerx < car.getX()+car.getSize())) {
+		   return true;
+		  }
+		 else  {
+		  return false;
+		 }
+    }
+    
     @Override
     public void setup() {
     c1 = new Car(400,100,10,5);
@@ -24,6 +33,7 @@ public class Frogger extends PApplet {
     c3 = new Car(400,500,10,5);
     }
 
+    
     @Override
     public void draw() {
     	background(0, 252, 215);
@@ -43,43 +53,50 @@ rect(c3.x , c3.y, 100, 50);
 c1.moveLeft();
    c2.moveRight();
   c3.moveLeft();
+    if(intersects(c1) == true) {
+    	Froggerx = 400;
+    	Froggery = 30;
+    }
+    
+    if(intersects(c2) == true) {
+    	Froggerx = 400;
+    	Froggery = 30;
+    }
+    
+    if(intersects(c3) == true) {
+    	Froggerx = 400;
+    	Froggery = 30;
+    }
+    
     }
   
     public void StayInCanvas() {
     	if (Froggery<=0 || Froggery>=800) {
- Froggery=550;
+ Froggery=30;
     	}
     	if (Froggerx<=0 || Froggerx>=800) {
     		 Froggerx=400;
     		    	}
     }
    
-    boolean intersects(Car car) {
-    	 if ((y > car.getY() && y < car.getY()+50) &&
-    	                (y > car.getX() && x < car.getX()+car.getSize())) {
-    	   return true;
-    	  }
-    	 else  {
-    	  return false;
-    	 }
-    }
+   
     public void keyPressed() {
        if(key == CODED){
            if(keyCode == UP)
            {
-           Froggery--;
+           Froggery-=3;
            }
            else if(keyCode == DOWN)
            {
-             Froggery++; 
+             Froggery+=3; 
            }
            else if(keyCode == RIGHT)
            {
-             Froggerx++;
+             Froggerx+=3;
            }
            else if(keyCode == LEFT)
            {
-              Froggerx--;
+              Froggerx-=3;
            }
        
    }
